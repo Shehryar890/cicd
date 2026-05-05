@@ -29,6 +29,7 @@ public class LikeController {
     @PostMapping
     public Like createLike(@RequestBody CreateLikeRequest createLikeRequest) {
         return likeService.createLike(createLikeRequest);
+        System.out.println("hey i m sherhyar");
     }
 
     @GetMapping("/{likeId}")
