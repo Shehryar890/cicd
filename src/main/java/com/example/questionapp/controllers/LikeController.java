@@ -23,13 +23,13 @@ public class LikeController {
     @GetMapping
     public List<LikeResponse> getAllLikes(@RequestParam Optional<Long> userId,@RequestParam Optional<Long> postId) {
         return likeService.getAllLikes(userId, postId);
-        System.out.println("hey i m shehryar");
+      
     }
 
     @PostMapping
     public Like createLike(@RequestBody CreateLikeRequest createLikeRequest) {
         return likeService.createLike(createLikeRequest);
-        System.out.println("hey i m sherhyar");
+        
     }
 
     @GetMapping("/{likeId}")
