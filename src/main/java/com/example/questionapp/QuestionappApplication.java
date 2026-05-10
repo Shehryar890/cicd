@@ -8,6 +8,7 @@ public class QuestionappApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(QuestionappApplication.class, args);
+		System.out.println("hey two teh"); 
 	}
 
 }
