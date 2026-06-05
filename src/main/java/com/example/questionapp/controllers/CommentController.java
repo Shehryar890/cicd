@@ -34,7 +34,9 @@ public class CommentController {
 
     @GetMapping("/{commentId}")
     public Comment getCommentById(@PathVariable Long commentId){
+        int b = 9 ; 
         return commentService.getCommentById(commentId);
+        
     }
 
     @PutMapping("/{commentId}")
