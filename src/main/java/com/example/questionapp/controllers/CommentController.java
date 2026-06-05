@@ -34,7 +34,7 @@ public class CommentController {
 
     @GetMapping("/{commentId}")
     public Comment getCommentById(@PathVariable Long commentId){
-        System.out.println("Processing started");
+        
         
         return commentService.getCommentById(commentId);
         
