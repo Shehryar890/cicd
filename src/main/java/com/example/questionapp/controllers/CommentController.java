@@ -22,7 +22,7 @@ public class CommentController {
 
     @GetMapping
     public List<CommentResponse> getAllComments(@RequestParam Optional<Long> userId, @RequestParam Optional<Long> postId) {
-        int a = 20 ; 
+        
         
         return commentService.getAllComments(userId, postId);
     }
@@ -34,7 +34,7 @@ public class CommentController {
 
     @GetMapping("/{commentId}")
     public Comment getCommentById(@PathVariable Long commentId){
-        int b = 9 ; 
+        
         return commentService.getCommentById(commentId);
         
     }
