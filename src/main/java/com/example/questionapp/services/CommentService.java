@@ -32,7 +32,7 @@ public class CommentService {
     public List<CommentResponse> getAllComments(Optional<Long> userId, Optional<Long> postId) {
         List<Comment> comments;
         if(userId.isPresent() && postId.isPresent()) {
-            System.out.println("hello");
+          
            
             comments = commentRepository.findByUserIdAndPostId(userId.get(), postId.get());  //get diyince içerisindeki değeri alırız.
         }else if(userId.isPresent()){  //sadece userId gelirse
